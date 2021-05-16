@@ -12,7 +12,8 @@ const country = {
 const years = {
     default: true,
     alias: "y",
-    desc: "Permite especificar el año para las estadisticas"
+    desc: "Permite especificar el año para las estadisticas",
+    default: 2018
 }
 const out = {
     default: true,
@@ -30,7 +31,6 @@ const argv = require("yargs")
     .command("guardar", "Guardar las estadisticas", {
         out
     })
-    .help()
     .argv;
 
 module.exports = {

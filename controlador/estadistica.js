@@ -82,7 +82,7 @@ async function obtenerTop5Max(pais, anio, suscripcionPais) {
     return top
 }
 
-async function ObtenerTop5Min(pais, anio, suscripcionPais) {
+async function obtenerTop5Min(pais, anio, suscripcionPais) {
     let top = [];
     for (let dato of pais) {
         dato = Object.values(dato);
@@ -90,8 +90,8 @@ async function ObtenerTop5Min(pais, anio, suscripcionPais) {
         if (Number(suscripcion) > 0) {
             if (suscripcion < suscripcionPais) {
                 let datos = {
-                    Pais: datos[0],
-                    Codigo: datos[1],
+                    Pais: dato[0],
+                    Codigo: dato[1],
                     Suscripciones: suscripcion,
                 }
                 top.push(datos);
@@ -144,10 +144,10 @@ async function consultar(path, codigo, anio) {
                                 if (media > 0) {
                                     let estado;
                                     if (Number(media) > suscripcionPais) {
-                                        estado = `El valor de las sucripciones de ${cod} es menor a la media mundial.`
+                                        estado = `El valor de las sucripciones de ${codigo} es menor a la media mundial.`
 
                                     } else {
-                                        estado = `El valor de las sucripciones de ${cod} es mayor a la media mundial.`
+                                        estado = `El valor de las sucripciones de ${codigo} es mayor a la media mundial.`
                                     }
                                     let medi = {
                                         Codigo: codigo,
@@ -173,7 +173,7 @@ async function consultar(path, codigo, anio) {
                                                 }
                                             }
                                         })
-                                    ObtenerTop5Min(pais, anio, suscripcionPais)
+                                    obtenerTop5Min(pais, anio, suscripcionPais)
                                         .then((tp5Min) => {
                                             if (tp5Min.length > 0) {
                                                 for (let i of tp5Min) {
@@ -219,4 +219,8 @@ async function consultar(path, codigo, anio) {
     }
     return await informacion;
 
+}
+
+module.exports = {
+    consultar
 }

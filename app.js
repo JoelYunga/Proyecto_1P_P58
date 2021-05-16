@@ -1,12 +1,13 @@
-const { argv } = require('./config/yargs');
+const argv = require('./config/yargs').argv;
 const datos = require('./controlador/datos');
+const estadistica = require('./controlador/estadistica');
 
 let comando = argv._[0];
 
 switch (comando) {
     case 'publicar':
         console.log('Publicando los datos estadisticos...');
-        let pub = publicar(argv.file, argv.country, argv.years);
+        let pub = datos.publicar(argv.file, argv.country, argv.years);
         console.log(pub);
         break;
     case 'guardar':
