@@ -11,7 +11,7 @@ switch (comando) {
         break;
     case 'guardar':
         console.log('Guardando los datos estadisticos...');
-        let guar = guardar(argv.out);
+        let guar = guardar(argv.file, argv.country, argv.years, argv.out);
         console.log(guar)
         break;
     default:
