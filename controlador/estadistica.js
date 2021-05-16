@@ -208,14 +208,14 @@ async function consultar(path, codigo, anio) {
 
 
             } else {
-                console.log('\n    ' + `Al momento no existe registros para el año: ${anio}`);
+                console.log('\n    ' + `Al momento no existe registros para el año: ${anio}`.bgRed);
             }
         } else {
-            console.log('\n    ' + `No existe el codigo del pais ${codigo} en la base de datos.`);
+            console.log('\n    ' + `No existe el codigo del pais ${codigo} en la base de datos.`.bgRed);
         }
 
     } else {
-        console.log('\n    ' + `:::No existe el archivo ${path} " :::`);
+        console.log('\n    ' + `:::No existe el archivo ${path} " :::`.bgRed);
     }
     return await informacion;
 
