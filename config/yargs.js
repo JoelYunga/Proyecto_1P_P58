@@ -29,6 +29,9 @@ const argv = require("yargs")
         years
     })
     .command("guardar", "Guardar las estadisticas", {
+        file,
+        country,
+        years,
         out
     })
     .argv;

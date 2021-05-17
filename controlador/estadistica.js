@@ -54,7 +54,7 @@ async function obtenerMedia(pais, anio) {
         }
     }
     if (promedio > 0) {
-        promedio = (suma / promedio).toFixed(3)
+        promedio = (suma / promedio).toFixed(2)
         return promedio
     } else {
         return 0
