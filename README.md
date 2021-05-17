@@ -32,4 +32,4 @@ API_IT.CEL.SETS_DS2_es_csv_v2_2278396.csv
 
 _Los programas necesesarios para la realización del software son Visual Studio Code_
 _En el siguiente link se encuentra una facil instlacion de Visual Studio Code solo sigue los pasos_
-_https://www.mclibre.org/consultar/informatica/lecciones/vsc-instalacion.html>_
+_https://www.mclibre.org/consultar/informatica/lecciones/vsc-instalacion.html_
