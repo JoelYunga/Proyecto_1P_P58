@@ -30,6 +30,14 @@ API_IT.CEL.SETS_DS2_es_csv_v2_2278396.csv
 ```
 ### Instalación 🔧
 
-_Los programas necesesarios para la realización del software son Visual Studio Code_
-_En el siguiente link se encuentra una facil instlacion de Visual Studio Code solo sigue los pasos_
+_Los programas necesesarios para la realización del software son Visual Studio Code y NodeJS_
+
+_En el siguiente link se encuentra una facil instalacion de Visual Studio Code_
+
 _https://www.mclibre.org/consultar/informatica/lecciones/vsc-instalacion.html_
+
+_Por ultimo se encuentra un link para la instalacion de NodeJS para los diferentes sistemas operativos_
+
+_https://desarrolloweb.com/articulos/instalar-node-js.html#:~:text=Instalaci%C3%B3n%20de%20NodeJS%20en%20Windows,instalador%20y%20%C2%A1ya%20lo%20tienes!_
+
+
