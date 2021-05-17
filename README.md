@@ -40,7 +40,7 @@ _Por ultimo se encuentra un link para la instalacion de NodeJS para los diferent
 
 _https://desarrolloweb.com/articulos/instalar-node-js.html#:~:text=Instalaci%C3%B3n%20de%20NodeJS%20en%20Windows,instalador%20y%20%C2%A1ya%20lo%20tienes!_
 
-_Instalacion de libreria yargs, colors, csvtojson._
+### Instalacion de libreria yargs, colors, csvtojson. 🔧
 
 _Ingresa a la terminal de Visual Studio Code y digita:_
 
