@@ -42,8 +42,9 @@ _https://desarrolloweb.com/articulos/instalar-node-js.html#:~:text=Instalaci%C3%
 
 _Instalacion de libreria yargs, colors, csvtojson._
 
+_Ingresa a la terminal de Visual Studio Code y digita:_
+
 ```
-Ingresa a la terminal de Visual Studio Code y digita:
 npm install yargs colors csvtojson --save
 ```
 
