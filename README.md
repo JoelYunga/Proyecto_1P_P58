@@ -1,3 +1,8 @@
+# UNIVERSIDAD POLITECNICA SALESIANA
+# Asignatura: Plataformas Web
+# Autor: Joel Yunga
+# Emai: jyungap1@est.ups.edu.ec
+
 # Aplicación en NodeJS que permita leer los datos de las Suscripciones a telefonía celular móvil
 
 _Crear una aplicación en NodeJS que permita leer los datos de las suscripciones a telefonía celular móvil, publicadas por el Banco
@@ -18,4 +23,8 @@ _Librerias que necesitas instalar._
 yargs
 colors
 csvtojson
+```
+_Archivos adicionales._
+```
+API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv
 ```
