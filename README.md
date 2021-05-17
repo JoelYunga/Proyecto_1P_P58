@@ -1,7 +1,7 @@
-# UNIVERSIDAD POLITECNICA SALESIANA
-# Asignatura: Plataformas Web
-# Autor: Joel Yunga
-# Emai: jyungap1@est.ups.edu.ec
+## UNIVERSIDAD POLITECNICA SALESIANA
+## Asignatura: Plataformas Web
+## Autor: Joel Yunga
+## Emai: jyungap1@est.ups.edu.ec
 
 # Aplicación en NodeJS que permita leer los datos de las Suscripciones a telefonía celular móvil
 
@@ -26,5 +26,10 @@ csvtojson
 ```
 _Archivos adicionales._
 ```
-API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv
+API_IT.CEL.SETS_DS2_es_csv_v2_2278396.csv
 ```
+### Instalación 🔧
+
+_Los programas necesesarios para la realización del software son Visual Studio Code_
+_En el siguiente link se encuentra una facil instlacion de Visual Studio Code solo sigue los pasos_
+_https://www.mclibre.org/consultar/informatica/lecciones/vsc-instalacion.html>_
