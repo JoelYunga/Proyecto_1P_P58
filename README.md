@@ -47,5 +47,5 @@ _Ingresa a la terminal de Visual Studio Code y digita:_
 ```
 npm install yargs colors csvtojson --save
 ```
-
+![Screenshot](img/librerias.JPG)
 
