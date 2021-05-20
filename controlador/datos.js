@@ -5,7 +5,7 @@ const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
 
-
+let informacion = [];
 async function datos(path, pais, anio) {
     let datos = estadisticas.consultar(path, pais, anio)
     var respuesta = await datos
@@ -224,8 +224,23 @@ async function publicar(path, pais, anio) {
         })
 }
 
+async function guardarDatos(out) {
+    let data = JSON.stringify(informacion);
+    fs.writeFileSync(`./data/${out}.json`, data, (err, data) => {
+        if (err) throw new Error('No se pudo guardar la data', err);
+    });
+}
+
+async function leerDatos(out) {
+    try {
+        informacion = require(`../data/${out}.json`);
+    } catch (error) {
+        informacion = []
+    }
+}
+
 async function guardar(path, codigo, anio, out) {
-    let informacion = [];
+    leerDatos(out);
     datos(path, codigo, anio)
         .then((dato) => {
             for (let i of dato) {
@@ -239,6 +254,7 @@ async function guardar(path, codigo, anio, out) {
                         key: "info"
                     }
                     informacion.push(medi);
+
                 }
             }
             for (let i of dato) {
@@ -273,8 +289,8 @@ async function guardar(path, codigo, anio, out) {
                     informacion.push(tp5)
                 }
             }
-            fs.writeFileSync(`./data/${out}.json`, JSON.stringify(informacion));
-            console.log("Informacion guardada".bgGreen);
+            guardarDatos(out);
+
         })
 }
 
