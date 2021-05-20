@@ -49,3 +49,65 @@ npm install yargs colors csvtojson --save
 ```
 ![Screenshot](img/librerias.JPG)
 
+_DATASET._
+
+_Ingresa al siguiente link: <http://api.worldbank.org/v2/es/indicator/IT.CEL.SETS?downloadformat=csv/> y comenzara la descarga automaticamente._
+
+```
+Descomprime el archivo API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv en la carpeta raiz del proyecto
+```
+![Screenshot](img/dataset.JPG)
+
+## PRUEBAS ⚙️
+
+La aplicacion cuenta con 2 comandos:
+* Publicar
+* Guardar
+
+**Publicar**
+
+La estructura para publicar en la aplicacion es la sigueinte:
+node app.js publicar **-f** "nombre_archivo.csv" **-c** "[codigo_del_pais ](https://laendercode.net/es/3-letter-list.html)" **-y** Año
+
+```
+Ejemplo:
+node app.js publicar -f "./API_IT.CEL.SETS_DS2_es_csv_v2_2278396.csv" -c "THA" -y 2003
+```
+![Screenshot](img/publicar.JPG)
+
+Para visualizar los resultados en la web se debe seguir los siguientes pasos:
+
+```
+Abra su navegador digite en la seccion de url: localhost:3000
+```
+![Screenshot](img/localhost.JPG)
+
+```
+De Click en visualizar
+```
+![Screenshot](img/resultados.JPG)
+
+**Guardar**
+
+La estructura para guardar en la aplicacion es la siguiente:
+node app.js guardar **-f** "nombre_archivo.csv" **-c** "[codigo_del_pais ](https://laendercode.net/es/3-letter-list.html)" **-y** Año **-o** "nombre_archivo_sin_extension"
+
+```
+Ejemplo:
+node app.js guardar -f "./API_IT.CEL.SETS_DS2_es_csv_v2_2278396.csv" -c "THA" -y 2003  -o "resultados"
+```
+![Screenshot](img/guardar.JPG)
+
+Puede revisar los datos guardados en ela carpeta data y en el archivo resultados.json
+
+![Screenshot](img/archivo.JPG)
+
+## Construido con 🛠️
+
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código fuente.
+* [Node js](https://nodejs.org/es/) - Entorno de ejecución para JavaScript.
+* [GitHub](https://github.com/)  - Repositorio
+
+
+
+
