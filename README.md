@@ -83,7 +83,7 @@ Abra su navegador digite en la seccion de url: localhost:3000
 ![Screenshot](img/localhost.JPG)
 
 ```
-De Click en visualizar
+De Click en Ver Datos
 ```
 ![Screenshot](img/resultados.JPG)
 
