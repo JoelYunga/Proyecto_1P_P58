@@ -51,7 +51,7 @@ npm install yargs colors csvtojson --save
 
 _DATASET._
 
-_Ingresa al siguiente link: <http://api.worldbank.org/v2/es/indicator/IT.CEL.SETS?downloadformat=csv/> y comenzara la descarga automaticamente._
+_Ingresa al siguiente link: https://datos.bancomundial.org/indicador/IT.CEL.SETS_ y se descarga el archivo CSV
 
 ```
 Descomprime el archivo API_IT.CEL.SETS_DS2_es_csv_v2_1004854.csv en la carpeta raiz del proyecto
